@@ -4,38 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indre Ånd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="home-page">
-    <div class="glass-shell">
+    <div class="glass-shell home-shell">
         <header class="top-bar">
             <a href="index.html" class="top-bar__brand">Indre Ånd</a>
             <nav class="top-bar__nav">
                 <a href="booking.html" class="nav-button">Booking</a>
+                <a href="reviews.html" class="nav-button">Hvad siger andre</a>
                 <a href="about.html" class="nav-button">Om mig</a>
             </nav>
         </header>
 
-        <main class="container">
-            <section class="hero-content">
-                <h1>Indre Ånd</h1>
-                <p class="subtitle">Spirituel Vejledning</p>
-                
-                <div class="zen-text-block">
-                    <p>Velkommen til et frirum for sjælen. Her arbejder vi med at skabe balance mellem krop og sind gennem healing og spirituel vejledning.</p>
-                </div>
-            </section>
+        <main class="home-main">
 
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Healing</h3>
-                    <p>Giv slip på spændinger og genfind din naturlige energi.</p>
+            <div class="home-content">
+                <h1 class="home-title">Indre Ånd</h1>
+                <p class="home-eyebrow">Spirituel Vejledning</p>
+
+                <div class="home-portrait">
+                    <div class="hero-portrait">
+                        <img src="pictures/portrait.jpg" alt="Michael" />
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3>Clairvoyance</h3>
-                    <p>Få indsigt i hvem du er, og hvorfor du reagerer som du gør.</p>
+
+                <div class="home-divider"></div>
+
+                <div class="home-offerings">
+                    <div class="home-offering">
+                        <span class="home-offering__name">Healing</span>
+                        <span class="home-offering__desc">Skriv en lille tekst om healing</span>
+                    </div>
+                    <div class="home-offering">
+                        <span class="home-offering__name">Clairvoyance</span>
+                        <span class="home-offering__desc">(OMSKRIV KORTERE) Hvis du behov for et overblik. Hvem er du som person, hvorfor du reagere som du gør. Hvad det er der gør, du har det, som du har det her og nu.</span>
+                    </div>
                 </div>
+
+                <div class="home-divider"></div>
+
             </div>
+
         </main>
     </div>
 </body>
