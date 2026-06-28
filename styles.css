@@ -325,7 +325,8 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     .top-bar__brand {
         display: block;
         text-align: center;
-        font-size: clamp(1.9rem, 8vw, 2.3rem);
+        white-space: nowrap;
+        font-size: clamp(1.55rem, 7.2vw, 2.1rem);
         line-height: 1.1;
     }
 
@@ -364,6 +365,11 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
 
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2.2rem; }
+
+    .home-title {
+        white-space: nowrap;
+        font-size: clamp(2rem, 10vw, 2.8rem);
+    }
 
     .testimonial-item {
         padding: 2rem 1.5rem;
