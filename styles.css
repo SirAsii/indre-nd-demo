@@ -506,10 +506,12 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
 
     .home-portrait .hero-portrait {
         max-height: 100%;
+        min-width: 300px;
     }
 
     .hero-portrait img {
         object-position: 40% center;
+        min-width: 300px;
     }
 
     .home-content {
