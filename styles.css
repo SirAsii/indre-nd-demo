@@ -125,19 +125,6 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     margin-bottom: 0;
 }
 
-/* --- Content Elements --- */
-.zen-text-block {
-    text-align: center;
-    max-width: 65ch;
-    margin: 0 auto 3rem;
-}
-
-.portrait-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0 3rem;
-}
-
 .hero-portrait {
     width: 100%;
     max-width: 400px;
@@ -156,12 +143,6 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     object-position: 10% center;
     transform: scale(1.2);
     display: block;
-}
-
-/* --- Hero Section (index only) --- */
-.hero-content {
-    text-align: center;
-    padding-top: 2rem;
 }
 
 /* --- Services Grid --- */
@@ -212,15 +193,6 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     border-radius: 999px;
 }
 
-.service-note {
-    color: rgba(34, 61, 52, 0.7);
-    font-size: 0.88rem;
-    line-height: 1.6;
-    margin: 0;
-    border-top: 1px solid rgba(34, 61, 52, 0.1);
-    padding-top: 1rem;
-}
-
 /* --- Contact Block (booking page) --- */
 .contact-block {
     margin-top: 4rem;
@@ -242,9 +214,72 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     margin: 0.5rem 0;
 }
 
+.contact-block__summary {
+    margin-top: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-block__divider {
+    width: min(540px, 100%);
+    height: 1px;
+    margin: 1.2rem auto 1rem;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.contact-block__subtitle {
+    margin: 0.4rem 0 0.85rem;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: var(--text-header);
+    text-shadow: none;
+}
+
 .contact-block a {
     color: white;
     text-decoration: underline;
+}
+
+/* --- Booking compact layout --- */
+
+.booking-page .container.booking-compact {
+    padding-top: 0.75rem;
+    padding-bottom: 1.25rem;
+}
+
+.booking-compact .zen-header {
+    margin-bottom: 1.5rem;
+}
+
+.booking-compact .services-grid {
+    margin-top: 1.25rem;
+    gap: 1.25rem;
+}
+
+.booking-compact .service-item {
+    padding: 1.75rem 1.5rem;
+}
+
+.booking-compact .service-meta {
+    margin-bottom: 0;
+}
+
+.booking-compact .contact-block {
+    margin-top: 1.5rem;
+    padding: 1.75rem 1.5rem;
+}
+
+.booking-compact .contact-block h2 {
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+}
+
+.booking-compact .contact-block__subtitle {
+    margin: 0.25rem 0 0.65rem;
+    font-size: 1.7rem;
+}
+
+.booking-compact .contact-block__divider {
+    margin: 0.9rem auto 0.8rem;
 }
 
 /* --- Testimonials --- */
@@ -276,17 +311,6 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-/* --- About Article --- */
-.zen-article {
-    max-width: 65ch;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.zen-article p {
-    margin-bottom: 1.5rem;
 }
 
 /* --- MOBILE RESPONSIVE FIXES --- */
@@ -429,14 +453,6 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     line-height: 1.05;
 }
 
-.home-intro {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.85);
-    margin: 0;
-    text-align: center;
-}
-
 .home-divider {
     width: 100%;
     height: 1px;
@@ -473,27 +489,6 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     line-height: 1.5;
 }
 
-/* CTA link */
-.home-cta {
-    display: inline-block;
-    align-self: center;
-    padding: 0.8rem 2rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--glass-border);
-    color: var(--text-header);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.home-cta:hover {
-    background: rgba(255, 255, 255, 0.28);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
 @media (max-width: 750px) {
     .home-shell {
         height: auto;
@@ -527,19 +522,10 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
         text-align: center;
     }
 
-    .home-intro {
-        max-width: 100%;
-        text-align: center;
-    }
-
     .home-offering {
         flex-direction: column;
         align-items: center;
         gap: 0.25rem;
         text-align: center;
-    }
-
-    .home-cta {
-        align-self: center;
     }
 }
