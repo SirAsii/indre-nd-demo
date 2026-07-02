@@ -547,6 +547,36 @@ h2 { font-size: 2.8rem; margin: 0 0 2rem; }
     line-height: 1.5;
 }
 
+@media (min-width: 900px) {
+    .home-offerings {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .home-content {
+        max-width: 760px;
+    }
+
+    .home-offering {
+        display: grid;
+        grid-template-columns: 240px auto;
+        align-items: baseline;
+        column-gap: 1rem;
+        justify-content: start;
+    }
+
+    .home-offering__name {
+        min-width: 0;
+        text-align: right;
+    }
+
+    .home-offering__desc {
+        font-size: 0.98rem;
+        white-space: nowrap;
+        text-align: left;
+    }
+}
+
 @media (max-width: 750px) {
     .home-shell {
         height: auto;
